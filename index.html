@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/president.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting Machine</title>
+</head>
+<body>
+    <div class="urn">
+        <div class="screen">
+            <div class="d-1">
+                <div class="d-1-left">
+                    <div class="d-1-1">
+                        <span>YOUR VOTE FOR</span>
+                    </div>
+                    <div class="d-1-2">
+                        <span>CITY COUNCILOR</span>
+                    </div>
+                    <div class="d-1-3">
+                        <div class="number blinks"></div>
+                        <div class="number"></div>
+                    </div>
+                    <div class="d-1-4">
+                        Name: name <br>
+                        Party: party <br>
+                        Vice president: vice president
+                    </div>
+                </div>
+                <div class="d-1-right">
+                    <div class="d-1-image">
+                        <img src="img/president.png" alt="">
+                        President
+                    </div>
+                    <div class="d-1-image small">
+                        <img src="img/vicepresident.jpg" alt="">
+                        Vice president
+                    </div>
+                </div>
+            </div>
+            <div class="d-2">
+                Press the screen: <br/>
+                confirm to confirm this vote <br>
+                FIX to RESTART this vote
+            </div>
+        </div>
+        <div class="keyboard">
+            <div class="keyboard--line">
+                <div class="keyboard--button" onclick="clicou('1')">1</div>
+                <div class="keyboard--button" onclick="clicou('2')">2</div>
+                <div class="keyboard--button" onclick="clicou('3')">3</div>
+            </div>
+            <div class="keyboard--line">
+                <div class="keyboard--button" onclick="clicou('4')">4</div>
+                <div class="keyboard--button" onclick="clicou('5')">5</div>
+                <div class="keyboard--button" onclick="clicou('6')">6</div>
+            </div>
+            <div class="keyboard--line">
+                <div class="keyboard--button" onclick="clicou('7')">7</div>
+                <div class="keyboard--button" onclick="clicou('8')">8</div>
+                <div class="keyboard--button" onclick="clicou('9')">9</div>
+            </div>
+            <div class="keyboard--line">
+                <div class="keyboard--button" onclick="clicou(0)">0</div>
+            </div>
+            <div class="keyboard--line">
+                <div class="keyboard--button button--white" onclick="white()">white</div>
+                <div class="keyboard--button button--correct" onclick="correct()">correct</div>
+                <div class="keyboard--button button--confirm" onclick="confirm()">confirm</div>
+            </div>
+        </div>
+    </div>
+    <div class="president-options">
+        <h1>Candidate Options</h1>
+        <h2>Candidate for President:</h2>
+        <p>Joe Biden and Vice Kamala Harris - 55</p>
+        <p>Donald Trump and Vice Mike Pence - 67</p>
+        <p>Hillary Clinton and Vice Huma Abedin - 40</p>
+    </div>
+    
+
+    <script src="phases.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
